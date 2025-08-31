@@ -11,11 +11,12 @@ let isFlip = false
 
 function fliped(userNumber){
     let random = Math.ceil(Math.random()* 3)
-
     console.log(random);
     if(!isFlip){
 
         if(random === 1 ){
+
+
             img1.src = kingCard
             img2.src = jokerCard
             img3.src = jokerCard
@@ -34,19 +35,15 @@ function fliped(userNumber){
          if(userNumber === random){
         message.innerHTML = "You Won!"
         message.style.color= "green"
-        message.style.fontSize = "32px"
+        message.style.fontSize = "3rem"
     }else{
         message.innerHTML = "You loss!"
         message.style.color= "red"
-        message.style.fontSize = "32px"
+        message.style.fontSize = "3rem"
     }
     }
 
 isFlip = true
-
-   
-
-
 
 }
 

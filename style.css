@@ -1,9 +1,61 @@
 img {
     height: 300px;
     width: 200px;
-    margin-right: 20px;
+    margin: 20px;
 }
-button{ 
-    font-size: 40px;
-    padding: 10px;
+    
+    button{ 
+        font-size: 40px;
+        padding: 10px 20px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(97, 250, 255);
+        color: rgb(31, 19, 0);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    #message { 
+        text-align: center;
+    }
+    
+
+@media(max-width: 768px){
+    img{
+        height: 200px;
+        width: 120px;
+        margin: 5px;
+    }
+    button{
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}
+@media(max-width: 425px){
+
+    img{
+        width: 120px;
+        margin: 3px;
+        
+    }
+    
+    /* button{
+        font-size: 15px;
+        padding: 5px 5px;
+        border-radius: 8px;
+    } */
+}
+@media(max-width : 375px){
+    img{
+        width: 100px;
+        height: 150px;
+        margin: 1px;
+        
+    }
 }
